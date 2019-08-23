@@ -54,4 +54,10 @@ interface CachedImageProps {
  * 
  * Image component that caches the images automatically.
  */
-export class CachedImage extends PureComponent<CachedImageProps> { }
+interface CachedImageStatic extends PureComponent<CachedImageProps> { }
+
+declare var CachedImage: CachedImageStatic
+
+type CachedImage = CachedImageStatic
+
+export default CachedImage;
