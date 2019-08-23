@@ -1,6 +1,6 @@
 {
   "name": "rn-halcyon-cached-image",
-  "version": "0.1.10",
+  "version": "1.0.0",
   "description": "Image component for react-native with caching capabilities",
   "main": "index.js",
   "scripts": {
