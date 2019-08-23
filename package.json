@@ -23,6 +23,7 @@
     "react-native-fast-image": "^7.0.2",
     "prop-types": "^15.7.2"
   },
+  "typings": "./index.d.ts",
   "devDependencies": {
     "metro-react-native-babel-preset": "^0.56.0",
     "react": "16.8.6",
