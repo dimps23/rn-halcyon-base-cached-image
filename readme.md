@@ -4,6 +4,12 @@
 
 ### Installation
 
+#### requires you to install `react-native-fast-image`
+
+`yarn add react-native-fast-image`
+
+then
+
 ```
 yarn add rn-halcyon-cached-image
 ```
