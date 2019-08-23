@@ -17,7 +17,7 @@ type uriObjectType = {
   cache?: "immutable" | "web" | "cacheOnly"
 }
 
-export interface ImageStyle extends ReactNative.FlexStyle, ReactNative.TransformsStyle, ReactNative.ShadowStyleIOS {
+interface ImageStyle extends ReactNative.FlexStyle, ReactNative.TransformsStyle, ReactNative.ShadowStyleIOS {
   backfaceVisibility?: 'visible' | 'hidden'
   borderBottomLeftRadius?: number
   borderBottomRightRadius?: number
@@ -32,7 +32,7 @@ export interface ImageStyle extends ReactNative.FlexStyle, ReactNative.Transform
   opacity?: number
 }
 
-export interface CachedImageProps {
+interface CachedImageProps {
   /**
    * Can be object, string or asset.
    * 
