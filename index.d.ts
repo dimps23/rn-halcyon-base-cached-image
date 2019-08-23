@@ -3,11 +3,11 @@ import React, { PureComponent } from 'react'
 
 import * as ReactNative from 'react-native'
 
-export type resizeModeType = "contain" | "cover" | "stretch" | "center"
+type resizeModeType = "contain" | "cover" | "stretch" | "center"
 
-export type priorityType = "low" | "normal" | "high"
+type priorityType = "low" | "normal" | "high"
 
-export type uriObjectType = {
+type uriObjectType = {
   uri: string
   /**
    * Token for caching access.
@@ -17,7 +17,7 @@ export type uriObjectType = {
   cache?: "immutable" | "web" | "cacheOnly"
 }
 
-export interface ImageStyle extends ReactNative.FlexStyle, ReactNative.TransformsStyle, ReactNative.ShadowStyleIOS {
+interface ImageStyling extends ReactNative.FlexStyle, ReactNative.TransformsStyle, ReactNative.ShadowStyleIOS {
   backfaceVisibility?: 'visible' | 'hidden'
   borderBottomLeftRadius?: number
   borderBottomRightRadius?: number
@@ -32,7 +32,7 @@ export interface ImageStyle extends ReactNative.FlexStyle, ReactNative.Transform
   opacity?: number
 }
 
-export interface CachedImageProps {
+interface CachedImageProps {
   /**
    * Can be object, string or asset.
    * 
@@ -41,12 +41,12 @@ export interface CachedImageProps {
    * token: string,
    * [optional]priority: string,
    */
-  uri: uriObjectType | string | number;
-  width?: number;
-  height?: number;
-  rounded?: boolean;
-  imageStyle?: ReactNative.StyleProp<ImageStyle>;
-  resize?: resizeModeType;
+  uri: uriObjectType | string | number
+  width?: number
+  height?: number
+  rounded?: boolean
+  imageStyle?: ReactNative.StyleProp<ImageStyling>
+  resize?: resizeModeType
 }
 
 /**
@@ -54,10 +54,4 @@ export interface CachedImageProps {
  * 
  * Image component that caches the images automatically.
  */
-interface CachedImageStatic extends PureComponent<CachedImageProps> { }
-
-declare var CachedImage: CachedImageStatic
-
-type CachedImage = CachedImageStatic
-
-export default CachedImage;
+export default class CachedImage extends PureComponent<CachedImageProps> { }
