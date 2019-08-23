@@ -3,11 +3,11 @@ import React, { PureComponent } from 'react'
 
 import * as ReactNative from 'react-native'
 
-type resizeModeType = "contain" | "cover" | "stretch" | "center"
+export type resizeModeType = "contain" | "cover" | "stretch" | "center"
 
-type priorityType = "low" | "normal" | "high"
+export type priorityType = "low" | "normal" | "high"
 
-type uriObjectType = {
+export type uriObjectType = {
   uri: string
   /**
    * Token for caching access.
@@ -17,7 +17,7 @@ type uriObjectType = {
   cache?: "immutable" | "web" | "cacheOnly"
 }
 
-interface ImageStyle extends ReactNative.FlexStyle, ReactNative.TransformsStyle, ReactNative.ShadowStyleIOS {
+export interface ImageStyle extends ReactNative.FlexStyle, ReactNative.TransformsStyle, ReactNative.ShadowStyleIOS {
   backfaceVisibility?: 'visible' | 'hidden'
   borderBottomLeftRadius?: number
   borderBottomRightRadius?: number
@@ -32,7 +32,7 @@ interface ImageStyle extends ReactNative.FlexStyle, ReactNative.TransformsStyle,
   opacity?: number
 }
 
-interface CachedImageProps {
+export interface CachedImageProps {
   /**
    * Can be object, string or asset.
    * 
