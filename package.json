@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/logicallydimp23/rn-halcyon-base-cached-image#readme",
   "dependencies": {
-    "react-native-fast-image": "^7.0.2",
+    "react-native-fast-image": "^8.3.0",
     "prop-types": "^15.7.2"
   },
   "typings": "index.d.ts",
